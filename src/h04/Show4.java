@@ -44,5 +44,6 @@ public class Show4 extends Applet {
         g.drawLine(280,90,280,70);
         g.drawLine(270,90,270,70);
         g.drawLine(260,80,280,80);
+
     }
 }
