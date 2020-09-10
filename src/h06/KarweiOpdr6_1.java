@@ -5,11 +5,13 @@ import java.applet.*;
 
 public class KarweiOpdr6_1 extends Applet {
 
-    int uitkomst;
+    double a, b, uitkomst;
 
     public void init() {
 
-        uitkomst = 113/4;
+        a = 113;
+        b = 4;
+        uitkomst = a/b;
 
     }
 
