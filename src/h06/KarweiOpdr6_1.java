@@ -9,12 +9,15 @@ public class KarweiOpdr6_1 extends Applet {
 
     public void init() {
 
-        uitkomst = 133/4;
+        uitkomst = 113/4;
 
     }
 
         public void paint(Graphics g) {
-        g.drawString("Iedereen krijgt €" + uitkomst ,20,20);
+        g.drawString("Ali krijgt €" + uitkomst ,20,20);
+        g.drawString("Jan krijgt €" + uitkomst ,20,40);
+        g.drawString("Jeanette krijgt €" + uitkomst ,20,60);
+        g.drawString("Niels krijgt €" + uitkomst ,20,80);
 
 
 
