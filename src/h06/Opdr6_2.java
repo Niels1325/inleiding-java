@@ -1,6 +1,6 @@
 package h06;
 
-import javax.crypto.SealedObject;
+
 import java.awt.*;
 import java.applet.*;
 
