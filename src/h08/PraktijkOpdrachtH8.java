@@ -9,7 +9,8 @@ public class PraktijkOpdrachtH8 extends Applet {
 
     Button Keerknop, Gedeeldknop, Plusknop, Minknop;
     TextField tekstvak1, tekstvak2;
-    String H;
+    String s;
+    String b;
     double getal, keer, gedeeld, plus, min;
 
     public void init() {
@@ -35,14 +36,19 @@ public class PraktijkOpdrachtH8 extends Applet {
     }
 
     public void paint(Graphics g) {
-
+    setBackground(Color.BLACK);
 
 
     }
 
     class KeerknopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            H = tekstvak1.getText();
+            String s = tekstvak1.getText();
+            String b = tekstvak2.getText();
+            getal = Double.parseDouble( s );
+            keer = Double.parseDouble( b );
+            getal = getal*keer;
+            tekstvak1.setText("" + getal);
             tekstvak2.setText("");
             repaint();
         }
@@ -50,7 +56,12 @@ public class PraktijkOpdrachtH8 extends Applet {
 
     class GedeeldknopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            H = tekstvak1.getText();
+            String s = tekstvak1.getText();
+            String b = tekstvak2.getText();
+            getal = Double.parseDouble( s );
+            gedeeld = Double.parseDouble( b );
+            getal = getal/gedeeld;
+            tekstvak1.setText("" + getal);
             tekstvak2.setText("");
             repaint();
         }
@@ -58,7 +69,12 @@ public class PraktijkOpdrachtH8 extends Applet {
 
     class PlusknopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            H = tekstvak1.getText();
+            String s = tekstvak1.getText();
+            String b = tekstvak2.getText();
+            getal = Double.parseDouble( s );
+            plus = Double.parseDouble( b );
+            getal = getal+plus;
+            tekstvak1.setText("" + getal);
             tekstvak2.setText("");
             repaint();
         }
@@ -66,7 +82,12 @@ public class PraktijkOpdrachtH8 extends Applet {
 
     class MinknopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            H = tekstvak1.getText();
+            String s = tekstvak1.getText();
+            String b = tekstvak2.getText();
+            getal = Double.parseDouble( s );
+            min = Double.parseDouble( b );
+            getal = getal-min;
+            tekstvak1.setText("" + getal);
             tekstvak2.setText("");
             repaint();
         }
