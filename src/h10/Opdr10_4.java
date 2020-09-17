@@ -10,7 +10,6 @@ public class Opdr10_4 extends Applet{
 
     TextField tekstvak1;
     TextField tekstvak2;
-    Label label;
     String s, tekst, tekst2;
     int maand, jaartal;
 
@@ -38,7 +37,6 @@ public class Opdr10_4 extends Applet{
     }
 
     class tekstvak2Listener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent e) {
             s = tekstvak2.getText();
             jaartal = Integer.parseInt( s );
@@ -53,7 +51,6 @@ public class Opdr10_4 extends Applet{
         }
     }
     class TextListener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent e) {
             s = tekstvak1.getText();
             maand = Integer.parseInt( s );

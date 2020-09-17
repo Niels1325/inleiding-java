@@ -32,7 +32,6 @@ public class Opdr10_2 extends Applet {
 
 
     class VakListener implements ActionListener {
-        @Override
         public void actionPerformed( ActionEvent e ) {
             String s;
 

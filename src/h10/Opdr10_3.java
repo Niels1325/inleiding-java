@@ -31,7 +31,6 @@ public class Opdr10_3 extends Applet{
     }
 
     class TextListener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent e) {
             s = tekstvak.getText();
             maand = Integer.parseInt( s );
