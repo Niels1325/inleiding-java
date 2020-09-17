@@ -7,9 +7,8 @@ import java.awt.event.*;
 
 public class Opdr10_1 extends Applet {
 
-    int cijfer;
+    int cijfer, uitkomst;
     TextField tekstvak;
-    int uitkomst;
 
     public void init() {
         tekstvak = new TextField( 5);
@@ -22,6 +21,7 @@ public class Opdr10_1 extends Applet {
     }
 
     public void paint(Graphics g) { g.drawString(String.valueOf(uitkomst), 50, 45 ); }
+
 
     class VakListener implements ActionListener {
         @Override
