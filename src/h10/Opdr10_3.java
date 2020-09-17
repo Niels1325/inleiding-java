@@ -43,7 +43,7 @@ public class Opdr10_3 extends Applet{
                     break;
 
                 case 2:
-                    tekst = "Februari, 28 dagen";
+                    tekst = "Februari, 29 dagen";
                     break;
 
                 case 3:
