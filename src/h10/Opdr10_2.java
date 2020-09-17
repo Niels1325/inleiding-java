@@ -5,9 +5,9 @@ import java.applet.*;
 import java.awt.event.*;
 
 
-public class Opdr10_1 extends Applet {
+public class Opdr10_2 extends Applet {
 
-    int cijfer, uitkomst;
+    int cijfer, uitkomst, seconduitkomst;
     TextField tekstvak;
 
     public void init() {
@@ -20,7 +20,10 @@ public class Opdr10_1 extends Applet {
 
     }
 
-    public void paint(Graphics g) { g.drawString(String.valueOf(uitkomst), 200, 45 ); }
+    public void paint(Graphics g) {
+        g.drawString(String.valueOf(uitkomst), 200, 45 );
+        g.drawString(String.valueOf(seconduitkomst), 200, 60 );
+    }
 
 
     class VakListener implements ActionListener {
@@ -33,6 +36,8 @@ public class Opdr10_1 extends Applet {
             if ( cijfer > uitkomst ) {
                 uitkomst = cijfer;
             }
+            if (seconduitkomst == 0) seconduitkomst = cijfer;
+            if (seconduitkomst > cijfer) seconduitkomst = cijfer;
             repaint();
         }
     }
