@@ -21,9 +21,13 @@ public class Opdr6_2 extends Applet {
     }
 
     public void paint(Graphics g) {
-    g.drawString("Aantal seconden in een uur: " + Uren,20,20);
-    g.drawString("Aantal seconden in een dag: " + Dagen, 20,40);
-    g.drawString("Aantal seconden in een jaar: " + Jaar, 20,60);
+
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
+        g.drawString("Aantal seconden in een uur: " + Uren,20,20);
+        g.drawString("Aantal seconden in een dag: " + Dagen, 20,40);
+        g.drawString("Aantal seconden in een jaar: " + Jaar, 20,60);
 
 
 

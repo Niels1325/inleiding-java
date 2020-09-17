@@ -21,9 +21,11 @@ public class Opdr6_3 extends Applet {
 
 
     public void paint(Graphics g) {
-    setBackground(Color.black);
-    g.setColor(Color.green);
-    g.drawString("De uitkomst is "  + uitkomst  ,20,40);
+
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
+        g.drawString("De uitkomst is "  + uitkomst  ,20,40);
 
 
 

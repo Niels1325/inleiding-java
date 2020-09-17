@@ -14,6 +14,10 @@ public class Teller extends Applet {
     }
 
     public void paint(Graphics g) {
+
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
         teller++;
         g.drawString("Scherm is " + teller +
                 " keer ververst.", 50, 60 );

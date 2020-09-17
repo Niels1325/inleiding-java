@@ -36,7 +36,10 @@ public class PraktijkOpdrachtH8 extends Applet {
     }
 
     public void paint(Graphics g) {
-    setBackground(Color.BLACK);
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.BLACK);
+        g.setColor(Color.WHITE);
+
 
 
     }

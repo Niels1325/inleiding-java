@@ -27,8 +27,14 @@ public class Opdr8_3 extends Applet {
     }
 
     public void paint(Graphics g) {
+
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
         g.drawString("De BTW is: " + getal, 20 , 40);
+
     }
+
         class KnopListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
                 H = tekstvak.getText();

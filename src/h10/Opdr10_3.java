@@ -16,27 +16,27 @@ public class Opdr10_3 extends Applet{
     public void init(){
 
         tekstvak = new TextField(50);
-        tekstvak.addActionListener(new tekstListener());
+        tekstvak.addActionListener(new TextListener());
         add(tekstvak);
 
     }
 
     public void paint(Graphics g) {
 
-        g.drawString( tekst, 200, 50);
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
+        g.drawString( tekst, 20, 50);
 
 
     }
 
-    class tekstListener implements ActionListener {
+    class TextListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             s = tekstvak.getText();
             maand = Integer.parseInt( s );
             switch (maand) {
-                default:
-                    tekst = "Het nummer dat u heeft ingevuld heeft geen waarde tot maanden";
-                    break;
 
                 case 1:
                     tekst = "Januari, 31 dagen";
@@ -85,7 +85,12 @@ public class Opdr10_3 extends Applet{
                 case 12:
                     tekst = "December, 31 dagen";
                     break;
+
+                default:
+                    tekst = "Het nummer dat u heeft ingevuld heeft geen waarde tot maanden";
+                    break;
             }
+            repaint();
         }
     }
 }

@@ -21,8 +21,13 @@ public class Opdr10_2 extends Applet {
     }
 
     public void paint(Graphics g) {
+
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
         g.drawString(String.valueOf(uitkomst), 200, 45 );
         g.drawString(String.valueOf(seconduitkomst), 200, 60 );
+
     }
 
 
