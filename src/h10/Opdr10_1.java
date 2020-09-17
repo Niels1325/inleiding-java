@@ -7,11 +7,12 @@ import java.awt.event.*;
 
 public class Opdr10_1 extends Applet {
 
-    int cijfer, uitkomst;
+    int cijfer;
     TextField tekstvak;
+    int uitkomst;
 
     public void init() {
-        tekstvak = new TextField("", 5);
+        tekstvak = new TextField( 5);
         tekstvak.addActionListener( new VakListener() );
         add( tekstvak );
         uitkomst = 0;
@@ -20,9 +21,7 @@ public class Opdr10_1 extends Applet {
 
     }
 
-    public void paint(Graphics g) {
-        g.drawString(String.valueOf(uitkomst), 50, 45 );
-    }
+    public void paint(Graphics g) { g.drawString(String.valueOf(uitkomst), 50, 45 ); }
 
     class VakListener implements ActionListener {
         @Override
@@ -31,12 +30,10 @@ public class Opdr10_1 extends Applet {
 
             s = tekstvak.getText();
             cijfer = Integer.parseInt( s );
-            if ( uitkomst > cijfer ) {
+            if ( cijfer > uitkomst ) {
                 uitkomst = cijfer;
             }
-            else {
-                repaint();
-            }
+            repaint();
         }
     }
 }
