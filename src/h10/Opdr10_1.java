@@ -7,34 +7,34 @@ import java.awt.event.*;
 
 public class Opdr10_1 extends Applet {
 
-    int cijfer;
+    int cijfer, uitkomst;
     TextField tekstvak;
-    Label label;
-    String tekst;
 
     public void init() {
         tekstvak = new TextField("", 5);
         tekstvak.addActionListener( new VakListener() );
-        tekst = "";
-
-        label = new Label("Geef uw leeftijd in en druk op enter" );
-
-        add( label );
         add( tekstvak );
+        uitkomst = 0;
+
+
+
     }
 
     public void paint(Graphics g) {
-        g.drawString(tekst, 50, 45 );
+        g.drawString(String.valueOf(uitkomst), 50, 45 );
     }
 
     class VakListener implements ActionListener {
+        @Override
         public void actionPerformed( ActionEvent e ) {
             String s;
 
             s = tekstvak.getText();
             cijfer = Integer.parseInt( s );
-            if ( tekst > cijfer ) {
-                tekst = "" + cijfer;
+            if ( uitkomst > cijfer ) {
+                uitkomst = cijfer;
+            }
+            else {
                 repaint();
             }
         }
