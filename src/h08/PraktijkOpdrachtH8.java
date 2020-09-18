@@ -9,8 +9,7 @@ public class PraktijkOpdrachtH8 extends Applet {
 
     Button Keerknop, Gedeeldknop, Plusknop, Minknop;
     TextField tekstvak1, tekstvak2;
-    String s;
-    String b;
+    String s, b;
     double getal, keer, gedeeld, plus, min;
 
     public void init() {
