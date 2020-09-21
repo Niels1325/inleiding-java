@@ -18,6 +18,7 @@ public class Opdr11_1 extends Applet {
     }
 
     public void paint(Graphics g) {
+        setBackground(Color.pink);
         for(int i = 0; i < eind; i++) {
             g.drawLine(loc, loc2, loc3, loc4);
             loc = loc + 20;
