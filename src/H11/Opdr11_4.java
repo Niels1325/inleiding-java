@@ -6,7 +6,9 @@ import java.awt.*;
 public class Opdr11_4 extends Applet {
 
     public void paint(Graphics g) {
-        setBackground(Color.pink);
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
         int breedte = 10;
         int getal;
         int cijfer = 0;

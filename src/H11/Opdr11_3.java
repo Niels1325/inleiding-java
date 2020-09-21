@@ -17,7 +17,9 @@ public class Opdr11_3 extends Applet {
     }
 
     public void paint(Graphics g) {
-        setBackground(Color.pink);
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
         int yPos = 20;
 
 

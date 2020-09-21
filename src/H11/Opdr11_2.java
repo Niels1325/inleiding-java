@@ -17,7 +17,9 @@ public class Opdr11_2 extends Applet {
 
 
     public void paint(Graphics g) {
-        setBackground(Color.pink);
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.PINK);
+        g.setColor(Color.WHITE);
         for(int i = 10; i < eind; i++) {
 
             g.drawString("" + getal, breedte, 60 );
