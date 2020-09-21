@@ -5,7 +5,7 @@ import java.applet.*;
 
 public class Opdr11_3 extends Applet {
     long[] f;
-    int yPos = 20;
+
 
     public void init() {
         f = new long[1000];
@@ -23,7 +23,7 @@ public class Opdr11_3 extends Applet {
         g.setColor(Color.WHITE);
 
 
-
+        int yPos = 20;
         for (int i = 0; i < 1000; i++) {
             g.drawString("" + f[i], 50, yPos);
             yPos += 20;
