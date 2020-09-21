@@ -1,4 +1,4 @@
-package H11;
+package h11;
 
 import java.awt.*;
 import java.applet.*;
