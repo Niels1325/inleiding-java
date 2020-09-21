@@ -21,6 +21,7 @@ public class Opdr11_1 extends Applet {
         g.setFont(new Font("default", Font.BOLD, 12));
         setBackground(Color.PINK);
         g.setColor(Color.WHITE);
+
         for(int i = 0; i < eind; i++) {
             g.drawLine(loc, loc2, loc3, loc4);
             loc = loc + 20;

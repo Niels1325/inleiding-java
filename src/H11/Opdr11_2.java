@@ -19,6 +19,7 @@ public class Opdr11_2 extends Applet {
         g.setFont(new Font("default", Font.BOLD, 12));
         setBackground(Color.PINK);
         g.setColor(Color.WHITE);
+
         for(int i = getal; i <= eind; i++) {
             g.drawString("" + i,i*15,20);
         }

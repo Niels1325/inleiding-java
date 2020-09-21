@@ -10,6 +10,7 @@ public class Opdr11_5 extends Applet {
         g.setFont(new Font("default", Font.BOLD, 12));
         setBackground(Color.PINK);
         g.setColor(Color.WHITE);
+
         int Aantal = 0;
         int X = 10;
         int Y = 10;
