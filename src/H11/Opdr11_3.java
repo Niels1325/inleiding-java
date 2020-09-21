@@ -4,15 +4,15 @@ import java.awt.*;
 import java.applet.*;
 
 public class Opdr11_3 extends Applet {
-    long[] fibo;
+    long[] f;
 
     public void init() {
-        fibo = new long[1000];
-        fibo[0] = 0;
-        fibo[1] = 1;
+        f = new long[1000];
+        f[0] = 0;
+        f[1] = 1;
 
         for (int i = 2; i < 1000; i++) {
-            fibo[i] = fibo[i - 2] + fibo[i - 1];
+            f[i] = f[i - 2] + f[i - 1];
         }
     }
 
@@ -21,7 +21,7 @@ public class Opdr11_3 extends Applet {
 
 
         for (int i = 0; i < 1000; i++) {
-            g.drawString("" + fibo[i], 50, yPos);
+            g.drawString("" + f[i], 50, yPos);
             yPos += 20;
         }
 
