@@ -15,7 +15,7 @@ public class PO2 extends Applet {
     public void init() {
         A=0;
         antwoord=0;
-        knop = new Button("ok");
+        knop = new Button("OK");
         knop.addActionListener(new Submit());
         add(knop);
     }
@@ -35,7 +35,7 @@ public class PO2 extends Applet {
             g.drawString("5 x " + A + " =",50,130);
             g.drawString("6 x " + A + " =",50,150);
             g.drawString("7 x " + A + " =",50,170);
-            g.drawString("8 x " + A+ " =",50,190);
+            g.drawString("8 x " + A + " =",50,190);
             g.drawString("9 x " + A + " =",50,210);
             g.drawString("10 x " + A + " =",45,230);
         }

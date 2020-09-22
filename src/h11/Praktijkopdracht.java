@@ -15,7 +15,7 @@ public class Praktijkopdracht extends Applet {
         A = 0;
         antwoord = 0;
         tv = new TextField("",5);
-        knop= new Button("Bereken");
+        knop= new Button("OK");
         tv.addActionListener(new Submit());
         knop.addActionListener(new Submit());
         add(tv);
