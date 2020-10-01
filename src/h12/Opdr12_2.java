@@ -66,4 +66,4 @@ public class Opdr12_2 extends Applet {
 
         }
     }
-}
+
