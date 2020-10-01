@@ -55,6 +55,6 @@ public class Opdr12_1 extends Applet {
         for (int teller = 0; teller < Gemiddelde.length; teller++) {
             g.drawString("" + Gemiddelde[teller],105,20 * teller + 20);
         }
-        g.drawString("Gemiddelde: ",20,220);
+        g.drawString("Het gemiddelde: ",20,220);
     }
 }
