@@ -18,7 +18,7 @@ public class KarweiOpdr6_1 extends Applet {
         public void paint(Graphics g) {
 
             g.setFont(new Font("default", Font.BOLD, 12));
-            setBackground(Color.PINK);
+            setBackground(Color.black);
             g.setColor(Color.WHITE);
             g.drawString("Ali krijgt €" + uitkomst ,20,20);
             g.drawString("Jan krijgt €" + uitkomst ,20,40);

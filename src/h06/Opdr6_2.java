@@ -23,7 +23,7 @@ public class Opdr6_2 extends Applet {
     public void paint(Graphics g) {
 
         g.setFont(new Font("default", Font.BOLD, 12));
-        setBackground(Color.PINK);
+        setBackground(Color.black);
         g.setColor(Color.WHITE);
         g.drawString("Aantal seconden in een uur: " + Uren,20,20);
         g.drawString("Aantal seconden in een dag: " + Dagen, 20,40);

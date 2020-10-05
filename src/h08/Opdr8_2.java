@@ -41,7 +41,7 @@ public class Opdr8_2 extends Applet{
     public void paint(Graphics g) {
 
         g.setFont(new Font("default", Font.BOLD, 12));
-        setBackground(Color.PINK);
+        setBackground(Color.black);
         g.setColor(Color.WHITE);
         g.drawString("Aantal: " + VrouwAantal, 20,40);
         g.drawString("Aantal: " + ManAantal,90,40);

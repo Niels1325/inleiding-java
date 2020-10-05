@@ -23,7 +23,7 @@ public class Opdr10_1 extends Applet {
 
         g.setFont(new Font("default", Font.BOLD, 12));
         setBackground(Color.PINK);
-        g.setColor(Color.WHITE);
+        setBackground(Color.black);
         g.drawString(String.valueOf(uitkomst), 200, 45 );
 
     }
