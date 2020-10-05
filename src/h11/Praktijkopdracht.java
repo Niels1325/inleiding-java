@@ -24,7 +24,7 @@ public class Praktijkopdracht extends Applet {
 
     public void paint(Graphics g) {
         g.setFont(new Font("default", Font.BOLD, 12));
-        setBackground(Color.PINK);
+        setBackground(Color.black);
         g.setColor(Color.WHITE);
 
         for (int i=1; i<=10; i++){
