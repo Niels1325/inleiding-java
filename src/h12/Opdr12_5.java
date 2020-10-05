@@ -7,9 +7,9 @@ import java.awt.event.*;
 public class Opdr12_5 extends Applet {
 
     int[] getallen = {10, 25, 70, 105, 130, 150, 195, 199, 225, 230, 244,};
-    Label tekst = new Label("Voer een getal in tussen 1-250, gebruik hierbij geen decimalen");
+    Label tekst = new Label("Voer een getal tussen 1-250 in, geen decimalen toegestaan!");
     TextField input = new TextField("",20);
-    Button enter = new Button("Enter");
+    Button enter = new Button("OK");
 
     int nummer;
     boolean controle = false;
