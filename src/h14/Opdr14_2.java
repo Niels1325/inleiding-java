@@ -8,8 +8,8 @@ import java.util.Random;
 
 public class Opdr14_2 extends Applet {
 
-    String color[] = {"Harten", "Schoppen", "Klaver", "Ruiten"};
-    String meaning[] = {"Aas", "Twee", "Drie", "Vier", "Vijf", "Zes", "Zeven", "Acht", "Negen", "Tien", "Boer", "Vrouw", "Heer"};
+    String color[] = {"Hearts ", "Spades ", "Clubs ", "Diamonds "};
+    String[] meaning = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     String game[];
     Button share;
 
