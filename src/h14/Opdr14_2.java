@@ -58,10 +58,13 @@ public class Opdr14_2 extends Applet {
     }
 
     public void paint(Graphics g) {
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.black);
+        g.setColor(Color.WHITE);
         g.drawString("Player 1",50,50);
-        g.drawString("Player 2",150,50);
-        g.drawString("Player 3",250,50);
-        g.drawString("Player 4",350,50);
+        g.drawString("Player 2",160,50);
+        g.drawString("Player 3",270,50);
+        g.drawString("Player 4",380,50);
 
         int b = 0;
         for (int i = 0; i < 4; i++) {

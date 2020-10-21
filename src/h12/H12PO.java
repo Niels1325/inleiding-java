@@ -36,6 +36,9 @@ public class H12PO extends Applet {
     }
 
     public void paint(Graphics g) {
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.black);
+        g.setColor(Color.WHITE);
         if (toon == 10) {
             for (int i = 0; i <10; i++) {
                 String nummer = String.valueOf(i + 1) + "";

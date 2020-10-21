@@ -6,7 +6,7 @@ import java.applet.*;
 public class PO2H13 extends Applet {
 
     public void init() {
-
+        setSize(1920,1080);
     }
 
     public void paint(Graphics g) {
@@ -14,6 +14,9 @@ public class PO2H13 extends Applet {
     }
 
     void drawTree(Graphics g, int h) {
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.black);
+        g.setColor(Color.WHITE);
         for (int i = 0; i < 2; i++) {
             for (int a = 0; a < 5; a++) {
                 if (h < 80 * 1.6) {

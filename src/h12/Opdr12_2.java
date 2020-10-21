@@ -13,4 +13,11 @@ public class Opdr12_2 extends Applet {
             add(Buttons[i]);
         }
     }
+
+        public void paint(Graphics g) {
+            g.setFont(new Font("default", Font.BOLD, 12));
+            setBackground(Color.black);
+            g.setColor(Color.WHITE);
+        }
+
 }

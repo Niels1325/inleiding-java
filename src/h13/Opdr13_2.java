@@ -14,7 +14,9 @@ public class Opdr13_2 extends Applet {
     }
 
     void drawWall(Graphics g, int x, int y, int w, int h) {
-
+        g.setFont(new Font("default", Font.BOLD, 12));
+        setBackground(Color.black);
+        g.setColor(Color.WHITE);
         g.setColor(new Color(100, 100, 100));
         g.fillRect(x, y, w, h);
 
