@@ -59,12 +59,12 @@ public class H14PO extends Applet {
         }
     }
 
-    int botPlays(int userplay, int smileys) {
+    private int botPlays(int userplay, int disks) {
         int botplays = 0;
         double random = Math.random() * 3 + 1;
         int r = (int)random;
 
-        if(smileys == 23) {
+        if(disks == 23) {
             switch(userplay) {
                 case 1:
                     botplays = 1;
@@ -78,7 +78,7 @@ public class H14PO extends Applet {
             }
 
 
-        }else if(smileys == 21 || smileys == 17 || smileys == 13 || smileys == 9|| smileys == 5) {
+        }else if((disks -5)%4 ==0) {
             switch(userplay) {
                 case 1:
                     botplays = 3;
@@ -90,7 +90,7 @@ public class H14PO extends Applet {
                     botplays = 1;
                     break;
             }
-        }else if(smileys == 20 || smileys == 16 || smileys == 12 || smileys == 8|| smileys == 4){
+        }else if((disks -4)%4 ==0) {
             switch(userplay) {
                 case 1:
                     botplays = 2;
@@ -102,7 +102,7 @@ public class H14PO extends Applet {
                     botplays = r;
                     break;
             }
-        }else if(smileys == 19 || smileys == 15 || smileys == 11 || smileys == 7|| smileys == 3){
+        }else if(disks == 19 || disks == 15 || disks == 11 || disks == 7|| disks == 3){
             switch(userplay) {
                 case 1:
                     botplays = 1;
@@ -114,7 +114,7 @@ public class H14PO extends Applet {
                     botplays = 3;
                     break;
             }
-        }else if(smileys == 18 || smileys == 14 || smileys == 10 || smileys == 6|| smileys == 2){
+        }else if(disks == 18 || disks == 14 || disks == 10 || disks == 6|| disks == 2){
             switch(userplay) {
                 case 1:
                     botplays = r;
